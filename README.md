@@ -159,6 +159,59 @@ Config.EngineDeltaToPartDamage = 0.08  -- Engine damage → engine parts
 - Check if player is in vehicle
 - Verify tick interval settings
 
+## Future Development Roadmap
+
+This script provides a solid **mechanic framework** that can be extended in multiple directions. Here are the planned upgrade paths:
+
+### 🏁 **1. Performance Degradation Per Part (Realism Upgrade)**
+- Engine damage affects torque output, max speed, acceleration
+- Random stalling based on damage levels
+- Live handling modification with `SetVehicleEnginePowerMultiplier()`
+- Progressive power loss: 70% → slight loss, 40% → misfires, 20% → smoke + stalling
+
+### 🛞 **2. Tire Compounds (Simulation Upgrade)**
+- Multiple tire types: Street, Sport, Track, Drift, Offroad
+- Different wear rates and grip characteristics
+- Temperature system affecting performance
+- Burnouts increase temperature, affecting grip and wear
+
+### 🛠️ **3. Mechanic Skill System (RPG Layer)**
+- Mechanic XP and progression
+- Faster repair times with higher skill
+- Repair failure chance at low skill levels
+- Quality limitations (untrained mechanics can only restore to 80%)
+
+### 💰 **4. Economy Layer (Server Depth)**
+- Material-based repairs (metal, oil, etc.)
+- Cost system for parts and labor
+- Insurance integration
+- Salvage system for heavily damaged vehicles
+
+### 🔧 **5. Advanced Damage Types (Deep Simulation)**
+- Radiator (engine overheating)
+- Suspension (ride height + bounce effects)
+- Transmission (gear shift delays)
+- Brake wear (stopping distance)
+- Alignment (vehicle pulling)
+
+### 🧠 **6. Diagnostic Tablet UI (Professional Feel)**
+- NUI tablet interface with 3D vehicle diagrams
+- Click-to-inspect functionality
+- Detailed statistics display
+- Live temperature and pressure monitoring
+
+### 🚓 **7. Persistent Damage (Hardcore Mode)**
+- Server-side damage persistence
+- Tire wear saves across server restarts
+- Engine and suspension damage persistence
+- Long-term consequences for vehicle abuse
+
+### 🏎️ **8. Driving Behavior Damage Model**
+- Physics-based damage calculation
+- Impact speed and angle consideration
+- Raycast-based part detection
+- Realistic crash consequences (120 km/h wall hit = front suspension + radiator damage)
+
 ## Version History
 
 - **v6.0** - Full rewrite with improved sync and tire wear
